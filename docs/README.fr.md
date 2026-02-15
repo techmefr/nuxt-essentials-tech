@@ -1,0 +1,33 @@
+[🇬🇧 English](../README.md) | [🇫🇷 Français](./README.fr.md) | [🇪🇸 Español](./README.es.md) | [🇩🇪 Deutsch](./README.de.md) | [🇮🇹 Italiano](./README.it.md) | [🇨🇳 中文](./README.zh.md) | [🇧🇷 Português](./README.pt.md)
+
+# @techmefr/vue-industrial
+
+Une collection de modules typ\u00e9s et pr\u00eats pour la production, destin\u00e9s aux applications Vue 3 et Nuxt. Chaque package r\u00e9sout un probl\u00e8me r\u00e9current avec une API composable propre, construite sur Vuetify.
+
+Con\u00e7u pour standardiser les patterns courants entre projets : tables de donn\u00e9es, formulaires, filtres, et plus encore.
+
+## Packages
+
+| Package | Description | Documentation |
+|---------|-------------|---------------|
+| `@techmefr/table-define` | Composable pour tables Vuetify c\u00f4t\u00e9 serveur avec \u00e9tat r\u00e9actif, auto-watch, debounce et gestion d'erreurs | [README](../packages/table-define/docs/README.fr.md) |
+
+## D\u00e9veloppement
+
+```bash
+pnpm install
+cd packages/<package-name>
+pnpm test
+pnpm build
+```
+
+## Tests
+
+Tous les modules suivent les bonnes pratiques de testabilité. Utilisez [@techmefr/Datapower](https://github.com/techmefr/Datapower) pour :
+- Nettoyage automatique des attributs data-* en production
+- Helpers de test pour les tests unitaires, d'intégration et E2E
+- Approche standardisée avec data-test-id, data-test-class, data-state
+
+## Licence
+
+MIT
