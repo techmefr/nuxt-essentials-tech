@@ -11,6 +11,9 @@ Designed to standardize common patterns across projects: data tables, forms, fil
 | Package | Description | Documentation |
 |---------|-------------|---------------|
 | `@techmefr/table-define` | Composable for Vuetify server-side tables with reactive state, auto-watch, debounce and error handling | [README](./packages/table-define/README.md) |
+| `@techmefr/debounce` | Debounce utility and composable for Vue applications | [README](./packages/debounce/README.md) |
+| `@techmefr/before-unload` | Composable for beforeunload and navigation guards in Vue applications | [README](./packages/before-unload/README.md) |
+| `@techmefr/infinite-pagination` | Composable for infinite pagination with auto-append, loading state and error handling | [README](./packages/infinite-pagination/README.md) |
 
 ## Development
 

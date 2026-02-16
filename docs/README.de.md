@@ -11,6 +11,9 @@ Entwickelt, um g\u00e4ngige Muster projekt\u00fcbergreifend zu standardisieren: 
 | Paket | Beschreibung | Dokumentation |
 |-------|-------------|---------------|
 | `@techmefr/table-define` | Composable f\u00fcr serverseitige Vuetify-Tabellen mit reaktivem Zustand, Auto-Watch, Debounce und Fehlerbehandlung | [README](../packages/table-define/docs/README.de.md) |
+| `@techmefr/debounce` | Debounce-Utility und Composable für Vue-Anwendungen | [README](../packages/debounce/docs/README.de.md) |
+| `@techmefr/before-unload` | Composable für beforeunload und Navigationsguards in Vue | [README](../packages/before-unload/docs/README.de.md) |
+| `@techmefr/infinite-pagination` | Composable für unendliche Paginierung mit Auto-Append, Ladezustand und Fehlerbehandlung | [README](../packages/infinite-pagination/docs/README.de.md) |
 
 ## Entwicklung
 

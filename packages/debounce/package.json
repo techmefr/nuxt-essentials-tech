@@ -1,0 +1,48 @@
+{
+  "name": "@techmefr/debounce",
+  "version": "1.0.0",
+  "description": "Debounce utility and composable for Vue applications",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest",
+    "test:run": "vitest --run",
+    "test:coverage": "vitest --coverage",
+    "prepublishOnly": "pnpm run build && pnpm run test:run"
+  },
+  "keywords": [
+    "debounce",
+    "vue",
+    "composable",
+    "typescript"
+  ],
+  "author": "techmefr",
+  "license": "MIT",
+  "devDependencies": {
+    "@vitest/coverage-v8": "^1.6.1",
+    "happy-dom": "^20.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.1",
+    "vue": "^3.5.0"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "vue": {
+      "optional": true
+    }
+  }
+}

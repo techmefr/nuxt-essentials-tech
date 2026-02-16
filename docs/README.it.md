@@ -11,6 +11,9 @@ Progettato per standardizzare i pattern comuni tra i progetti: tabelle dati, for
 | Pacchetto | Descrizione | Documentazione |
 |-----------|-------------|----------------|
 | `@techmefr/table-define` | Composable per tabelle Vuetify lato server con stato reattivo, auto-watch, debounce e gestione errori | [README](../packages/table-define/docs/README.it.md) |
+| `@techmefr/debounce` | Utility debounce e composable per applicazioni Vue | [README](../packages/debounce/docs/README.it.md) |
+| `@techmefr/before-unload` | Composable per beforeunload e navigation guard in Vue | [README](../packages/before-unload/docs/README.it.md) |
+| `@techmefr/infinite-pagination` | Composable per paginazione infinita con auto-append, stato di caricamento e gestione errori | [README](../packages/infinite-pagination/docs/README.it.md) |
 
 ## Sviluppo
 

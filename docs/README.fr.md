@@ -11,6 +11,9 @@ Con\u00e7u pour standardiser les patterns courants entre projets : tables de don
 | Package | Description | Documentation |
 |---------|-------------|---------------|
 | `@techmefr/table-define` | Composable pour tables Vuetify c\u00f4t\u00e9 serveur avec \u00e9tat r\u00e9actif, auto-watch, debounce et gestion d'erreurs | [README](../packages/table-define/docs/README.fr.md) |
+| `@techmefr/debounce` | Utilitaire debounce et composable pour applications Vue | [README](../packages/debounce/docs/README.fr.md) |
+| `@techmefr/before-unload` | Composable pour beforeunload et gardes de navigation Vue | [README](../packages/before-unload/docs/README.fr.md) |
+| `@techmefr/infinite-pagination` | Composable pour pagination infinie avec auto-append, état de chargement et gestion d'erreurs | [README](../packages/infinite-pagination/docs/README.fr.md) |
 
 ## D\u00e9veloppement
 

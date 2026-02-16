@@ -11,6 +11,9 @@
 | \u5305 | \u63CF\u8FF0 | \u6587\u6863 |
 |---|------|------|
 | `@techmefr/table-define` | \u7528\u4E8E Vuetify \u670D\u52A1\u7AEF\u8868\u683C\u7684 Composable\uFF0C\u652F\u6301\u54CD\u5E94\u5F0F\u72B6\u6001\u3001\u81EA\u52A8\u76D1\u542C\u3001\u9632\u6296\u548C\u9519\u8BEF\u5904\u7406 | [README](../packages/table-define/docs/README.zh.md) |
+| `@techmefr/debounce` | 用于 Vue 应用的防抖工具和 Composable | [README](../packages/debounce/docs/README.zh.md) |
+| `@techmefr/before-unload` | 用于 Vue 应用的 beforeunload 和导航守卫 Composable | [README](../packages/before-unload/docs/README.zh.md) |
+| `@techmefr/infinite-pagination` | 用于 Vue 应用的无限分页 Composable，支持自动追加、加载状态和错误处理 | [README](../packages/infinite-pagination/docs/README.zh.md) |
 
 ## \u5F00\u53D1
 
