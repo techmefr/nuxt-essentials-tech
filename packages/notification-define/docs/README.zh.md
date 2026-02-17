@@ -154,10 +154,70 @@ snack.show('error', MyErrorCard, {
 
 ## 多实例
 
+每次调用 `defineSnackConfig` 都会创建一个完全隔离的 composable，拥有独立的队列、定时器、预设和快捷方式。这样可以分离不同用途：toast 用于用户反馈，banner 用于系统通知等。
+
 ```typescript
-const useToasts = defineSnackConfig<[]>(() => ({ presets: { success: {...}, error: {...} } }))
-const useBanners = defineSnackConfig<[]>(() => ({ presets: { announcement: { timeout: 0, position: 'top-center' } } }))
+// composables/useToast.ts
+const useToast = defineSnackConfig<[]>(() => ({
+    presets: {
+        success: { color: '#4CAF50', icon: 'mdi-check-circle', timeout: 3000 },
+        error: { color: '#F44336', icon: 'mdi-alert-circle', timeout: 0 },
+    },
+}))
+
+// composables/useAlert.ts
+const useAlert = defineSnackConfig<[]>(() => ({
+    presets: {
+        announcement: { color: '#2196F3', timeout: 0, position: 'top-center' },
+        maintenance: { color: '#FF9800', timeout: 10000, position: 'top-center' },
+    },
+}))
 ```
+
+```vue
+<script setup>
+const toast = useToast()
+const alert = useAlert()
+
+toast.success('文件已保存')
+alert.announcement('计划于22点进行维护')
+</script>
+
+<template>
+    <v-snackbar
+        v-for="item in toast.items.value"
+        :key="item.id"
+        :model-value="!item.isClosing"
+        :color="item.preset.color"
+        :timeout="-1"
+        @update:model-value="toast.dismiss(item.id)"
+    >
+        <span>{{ item.content }}</span>
+    </v-snackbar>
+
+    <v-banner
+        v-for="item in alert.items.value"
+        :key="item.id"
+        :color="item.preset.color"
+    >
+        {{ item.content }}
+        <template #actions>
+            <v-btn @click="alert.dismiss(item.id)">关闭</v-btn>
+        </template>
+    </v-banner>
+</template>
+```
+
+每个实例完全独立：
+
+| | `useToast()` | `useAlert()` |
+|---|---|---|
+| `items` | 独立列表 | 独立列表 |
+| 定时器 | 独立定时器 | 独立定时器 |
+| 预设 | `success`, `error` | `announcement`, `maintenance` |
+| 快捷方式 | `toast.success()`, `toast.error()` | `alert.announcement()`, `alert.maintenance()` |
+| `dismissAll()` | 仅清空 toast | 仅清空 alert |
+| 配置 | 独立 maxStack、dedup | 独立 maxStack、dedup |
 
 ## 测试
 

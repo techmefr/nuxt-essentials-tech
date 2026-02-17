@@ -154,10 +154,70 @@ snack.show('error', MyErrorCard, {
 
 ## Instances multiples
 
+Chaque appel à `defineSnackConfig` crée un composable totalement isolé avec sa propre file, ses propres timers, presets et raccourcis. Cela permet de séparer les usages : toasts pour le feedback utilisateur, bannières pour les alertes système, etc.
+
 ```typescript
-const useToasts = defineSnackConfig<[]>(() => ({ presets: { success: {...}, error: {...} } }))
-const useBanners = defineSnackConfig<[]>(() => ({ presets: { announcement: { timeout: 0, position: 'top-center' } } }))
+// composables/useToast.ts
+const useToast = defineSnackConfig<[]>(() => ({
+    presets: {
+        success: { color: '#4CAF50', icon: 'mdi-check-circle', timeout: 3000 },
+        error: { color: '#F44336', icon: 'mdi-alert-circle', timeout: 0 },
+    },
+}))
+
+// composables/useAlert.ts
+const useAlert = defineSnackConfig<[]>(() => ({
+    presets: {
+        announcement: { color: '#2196F3', timeout: 0, position: 'top-center' },
+        maintenance: { color: '#FF9800', timeout: 10000, position: 'top-center' },
+    },
+}))
 ```
+
+```vue
+<script setup>
+const toast = useToast()
+const alert = useAlert()
+
+toast.success('Fichier sauvegardé')
+alert.announcement('Maintenance prévue à 22h')
+</script>
+
+<template>
+    <v-snackbar
+        v-for="item in toast.items.value"
+        :key="item.id"
+        :model-value="!item.isClosing"
+        :color="item.preset.color"
+        :timeout="-1"
+        @update:model-value="toast.dismiss(item.id)"
+    >
+        <span>{{ item.content }}</span>
+    </v-snackbar>
+
+    <v-banner
+        v-for="item in alert.items.value"
+        :key="item.id"
+        :color="item.preset.color"
+    >
+        {{ item.content }}
+        <template #actions>
+            <v-btn @click="alert.dismiss(item.id)">Fermer</v-btn>
+        </template>
+    </v-banner>
+</template>
+```
+
+Chaque instance est totalement indépendante :
+
+| | `useToast()` | `useAlert()` |
+|---|---|---|
+| `items` | sa propre liste | sa propre liste |
+| timers | ses propres timers | ses propres timers |
+| presets | `success`, `error` | `announcement`, `maintenance` |
+| raccourcis | `toast.success()`, `toast.error()` | `alert.announcement()`, `alert.maintenance()` |
+| `dismissAll()` | vide les toasts uniquement | vide les alertes uniquement |
+| config | son propre maxStack, dedup | son propre maxStack, dedup |
 
 ## Tests
 
