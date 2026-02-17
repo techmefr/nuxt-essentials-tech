@@ -15,6 +15,7 @@ Projetado para padronizar padr\u00f5es comuns entre projetos: tabelas de dados, 
 | `@techmefr/before-unload` | Composable para beforeunload e guardas de navegação Vue | [README](../packages/before-unload/docs/README.pt.md) |
 | `@techmefr/infinite-pagination` | Composable para paginação infinita com auto-append, estado de carregamento e tratamento de erros | [README](../packages/infinite-pagination/docs/README.pt.md) |
 | `@techmefr/datetime-define` | defineDate, defineDateTime, defineDateRange — pickers tipados com suporte a locale e fuso horário via date-fns | [README](../packages/datetime-define/docs/README.pt.md) |
+| `@techmefr/notification-define` | Motor de notificações baseado em slug com presets, empilhamento, prioridade, deduplicação e ciclo de vida de promises | [README](../packages/notification-define/docs/README.pt.md) |
 
 ## Desenvolvimento
 

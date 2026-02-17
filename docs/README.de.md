@@ -15,6 +15,7 @@ Entwickelt, um g\u00e4ngige Muster projekt\u00fcbergreifend zu standardisieren: 
 | `@techmefr/before-unload` | Composable für beforeunload und Navigationsguards in Vue | [README](../packages/before-unload/docs/README.de.md) |
 | `@techmefr/infinite-pagination` | Composable für unendliche Paginierung mit Auto-Append, Ladezustand und Fehlerbehandlung | [README](../packages/infinite-pagination/docs/README.de.md) |
 | `@techmefr/datetime-define` | defineDate, defineDateTime, defineDateRange — typisierte Picker mit date-fns Locale- und Zeitzonen-Unterstützung | [README](../packages/datetime-define/docs/README.de.md) |
+| `@techmefr/notification-define` | Slug-basierte Benachrichtigungs-Engine mit Presets, Stapelung, Priorität, Deduplizierung und Promise-Lebenszyklus | [README](../packages/notification-define/docs/README.de.md) |
 
 ## Entwicklung
 

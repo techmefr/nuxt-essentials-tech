@@ -15,6 +15,7 @@ Designed to standardize common patterns across projects: data tables, forms, fil
 | `@techmefr/before-unload` | Composable for beforeunload and navigation guards in Vue applications | [README](./packages/before-unload/README.md) |
 | `@techmefr/infinite-pagination` | Composable for infinite pagination with auto-append, loading state and error handling | [README](./packages/infinite-pagination/README.md) |
 | `@techmefr/datetime-define` | defineDate, defineDateTime, defineDateRange — typed pickers with date-fns locale and timezone support | [README](./packages/datetime-define/README.md) |
+| `@techmefr/notification-define` | Slug-based notification engine with presets, stacking, priority, deduplication and promise lifecycle | [README](./packages/notification-define/README.md) |
 
 ## Development
 
