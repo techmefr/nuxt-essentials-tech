@@ -14,6 +14,7 @@ Con\u00e7u pour standardiser les patterns courants entre projets : tables de don
 | `@techmefr/debounce` | Utilitaire debounce et composable pour applications Vue | [README](../packages/debounce/docs/README.fr.md) |
 | `@techmefr/before-unload` | Composable pour beforeunload et gardes de navigation Vue | [README](../packages/before-unload/docs/README.fr.md) |
 | `@techmefr/infinite-pagination` | Composable pour pagination infinie avec auto-append, état de chargement et gestion d'erreurs | [README](../packages/infinite-pagination/docs/README.fr.md) |
+| `@techmefr/datetime-define` | defineDate, defineDateTime, defineDateRange — pickers typés avec support locale et fuseau horaire via date-fns | [README](../packages/datetime-define/docs/README.fr.md) |
 
 ## D\u00e9veloppement
 

@@ -14,6 +14,7 @@
 | `@techmefr/debounce` | 用于 Vue 应用的防抖工具和 Composable | [README](../packages/debounce/docs/README.zh.md) |
 | `@techmefr/before-unload` | 用于 Vue 应用的 beforeunload 和导航守卫 Composable | [README](../packages/before-unload/docs/README.zh.md) |
 | `@techmefr/infinite-pagination` | 用于 Vue 应用的无限分页 Composable，支持自动追加、加载状态和错误处理 | [README](../packages/infinite-pagination/docs/README.zh.md) |
+| `@techmefr/datetime-define` | defineDate, defineDateTime, defineDateRange — 强类型选择器，支持 date-fns 本地化和时区 | [README](../packages/datetime-define/docs/README.zh.md) |
 
 ## \u5F00\u53D1
 

@@ -14,6 +14,7 @@ Designed to standardize common patterns across projects: data tables, forms, fil
 | `@techmefr/debounce` | Debounce utility and composable for Vue applications | [README](./packages/debounce/README.md) |
 | `@techmefr/before-unload` | Composable for beforeunload and navigation guards in Vue applications | [README](./packages/before-unload/README.md) |
 | `@techmefr/infinite-pagination` | Composable for infinite pagination with auto-append, loading state and error handling | [README](./packages/infinite-pagination/README.md) |
+| `@techmefr/datetime-define` | defineDate, defineDateTime, defineDateRange — typed pickers with date-fns locale and timezone support | [README](./packages/datetime-define/README.md) |
 
 ## Development
 

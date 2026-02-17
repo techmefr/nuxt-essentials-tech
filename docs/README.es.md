@@ -14,6 +14,7 @@ Dise\u00f1ado para estandarizar patrones comunes entre proyectos: tablas de dato
 | `@techmefr/debounce` | Utilidad debounce y composable para aplicaciones Vue | [README](../packages/debounce/docs/README.es.md) |
 | `@techmefr/before-unload` | Composable para beforeunload y guardias de navegación Vue | [README](../packages/before-unload/docs/README.es.md) |
 | `@techmefr/infinite-pagination` | Composable para paginación infinita con auto-append, estado de carga y manejo de errores | [README](../packages/infinite-pagination/docs/README.es.md) |
+| `@techmefr/datetime-define` | defineDate, defineDateTime, defineDateRange — pickers tipados con soporte de locale y zona horaria via date-fns | [README](../packages/datetime-define/docs/README.es.md) |
 
 ## Desarrollo
 
