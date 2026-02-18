@@ -18,6 +18,7 @@ Con\u00e7u pour standardiser les patterns courants entre projets : tables de don
 | `@techmefr/notification-define` | Moteur de notifications par slug avec presets, empilement, priorité, déduplication et cycle de vie des promesses | [README](../packages/notification-define/docs/README.fr.md) |
 | `@techmefr/progress-define` | Composable de suivi de progression typé avec pourcentage, ratio, restant et sortie formatée réactifs | [README](../packages/progress-define/docs/README.fr.md) |
 | `@techmefr/threshold-define` | Composable de seuils typé avec couleur, label et style réactifs basés sur des plages de valeurs | [README](../packages/threshold-define/docs/README.fr.md) |
+| `@techmefr/clipboard-define` | Composable de presse-papier avec copie, tel: et mailto: et état de retour réactif | [README](../packages/clipboard-define/docs/README.fr.md) |
 
 ## D\u00e9veloppement
 

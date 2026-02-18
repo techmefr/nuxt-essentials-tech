@@ -18,6 +18,7 @@
 | `@techmefr/notification-define` | 基于 slug 的通知引擎，支持预设、堆叠、优先级、去重和 Promise 生命周期 | [README](../packages/notification-define/docs/README.zh.md) |
 | `@techmefr/progress-define` | 强类型进度追踪 Composable，支持响应式百分比、比率、剩余值和格式化输出 | [README](../packages/progress-define/docs/README.zh.md) |
 | `@techmefr/threshold-define` | 强类型阈值匹配 Composable，基于值范围提供响应式颜色、标签和样式 | [README](../packages/threshold-define/docs/README.zh.md) |
+| `@techmefr/clipboard-define` | 剪贴板 Composable，支持复制、tel: 和 mailto: 链接以及响应式反馈状态 | [README](../packages/clipboard-define/docs/README.zh.md) |
 
 ## \u5F00\u53D1
 

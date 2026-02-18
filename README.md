@@ -18,6 +18,7 @@ Designed to standardize common patterns across projects: data tables, forms, fil
 | `@techmefr/notification-define` | Slug-based notification engine with presets, stacking, priority, deduplication and promise lifecycle | [README](./packages/notification-define/README.md) |
 | `@techmefr/progress-define` | Typed progress tracking composable with reactive percentage, ratio, remaining and formatted output | [README](./packages/progress-define/README.md) |
 | `@techmefr/threshold-define` | Typed threshold matching composable with reactive color, label and style based on value ranges | [README](./packages/threshold-define/README.md) |
+| `@techmefr/clipboard-define` | Clipboard composable with copy, tel: and mailto: support and reactive feedback state | [README](./packages/clipboard-define/README.md) |
 
 ## Development
 
