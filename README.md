@@ -1,6 +1,6 @@
 [🇬🇧 English](./README.md) | [🇫🇷 Français](./docs/README.fr.md) | [🇪🇸 Español](./docs/README.es.md) | [🇩🇪 Deutsch](./docs/README.de.md) | [🇮🇹 Italiano](./docs/README.it.md) | [🇨🇳 中文](./docs/README.zh.md) | [🇧🇷 Português](./docs/README.pt.md)
 
-# @techmefr/vue-industrial
+# @techmefr/nuxt-industrial
 
 A collection of production-ready, typed modules for Vue 3 and Nuxt applications. Each package solves a specific recurring problem with a clean, composable API built on top of Vuetify.
 
