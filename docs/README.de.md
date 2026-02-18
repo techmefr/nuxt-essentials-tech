@@ -19,6 +19,8 @@ Entwickelt, um g\u00e4ngige Muster projekt\u00fcbergreifend zu standardisieren: 
 | `@techmefr/progress-define` | Typisiertes Fortschritts-Composable mit reaktivem Prozentsatz, Verhältnis, Restwert und formatierter Ausgabe | [README](../packages/progress-define/docs/README.de.md) |
 | `@techmefr/threshold-define` | Typisiertes Schwellenwert-Composable mit reaktiver Farbe, Label und Stil basierend auf Wertebereichen | [README](../packages/threshold-define/docs/README.de.md) |
 | `@techmefr/clipboard-define` | Zwischenablage-Composable mit Kopieren, tel: und mailto: Unterstützung und reaktivem Feedback-Status | [README](../packages/clipboard-define/docs/README.de.md) |
+| `@techmefr/ratio-define` | Typisiertes Verhältnis-Tracking-Composable mit reaktivem Prozentsatz, Verhältnis, Restwert und Abschlussstatus | [README](../packages/ratio-define/docs/README.de.md) |
+| `@techmefr/color-define` | Typisiertes Farbstufen-Composable mit Slug-basierten Bereichen, Reverse-Option und reaktiver Stilausgabe | [README](../packages/color-define/docs/README.de.md) |
 
 ## Entwicklung
 

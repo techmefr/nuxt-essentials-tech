@@ -19,6 +19,8 @@ Projetado para padronizar padr\u00f5es comuns entre projetos: tabelas de dados, 
 | `@techmefr/progress-define` | Composable tipado de acompanhamento de progresso com percentual, razão, restante e saída formatada reativos | [README](../packages/progress-define/docs/README.pt.md) |
 | `@techmefr/threshold-define` | Composable tipado de limiares com cor, rótulo e estilo reativos baseados em faixas de valores | [README](../packages/threshold-define/docs/README.pt.md) |
 | `@techmefr/clipboard-define` | Composable de area de transferencia com copia, tel: e mailto: e estado de feedback reativo | [README](../packages/clipboard-define/docs/README.pt.md) |
+| `@techmefr/ratio-define` | Composable tipado de acompanhamento de razão com percentual, razão, restante e estado de conclusão reativos | [README](../packages/ratio-define/docs/README.pt.md) |
+| `@techmefr/color-define` | Composable tipado de nível de cor com faixas baseadas em slug, opção reverse e saída de estilo reativa | [README](../packages/color-define/docs/README.pt.md) |
 
 ## Desenvolvimento
 

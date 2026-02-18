@@ -19,6 +19,8 @@ Designed to standardize common patterns across projects: data tables, forms, fil
 | `@techmefr/progress-define` | Typed progress tracking composable with reactive percentage, ratio, remaining and formatted output | [README](./packages/progress-define/README.md) |
 | `@techmefr/threshold-define` | Typed threshold matching composable with reactive color, label and style based on value ranges | [README](./packages/threshold-define/README.md) |
 | `@techmefr/clipboard-define` | Clipboard composable with copy, tel: and mailto: support and reactive feedback state | [README](./packages/clipboard-define/README.md) |
+| `@techmefr/ratio-define` | Typed ratio tracking composable with reactive percentage, ratio, remaining and completion state | [README](./packages/ratio-define/README.md) |
+| `@techmefr/color-define` | Typed color level composable with slug-based ranges, reverse option and reactive style output | [README](./packages/color-define/README.md) |
 
 ## Development
 

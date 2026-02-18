@@ -21,17 +21,13 @@ function generateId(): string {
     return `snack-${nextId}`
 }
 
-export function defineSnackConfig<
+export const defineSnackConfig = <
     TArgs extends unknown[],
-    TPresets extends Record<string, ISnackPreset>
+    TPresets extends Record<string, ISnackPreset> = Record<string, ISnackPreset>
 >(
     callback: (...args: TArgs) => ISnackConfig<TPresets>
-): (...args: TArgs) => ISnackReturn & { [K in keyof TPresets & string]: SnackShortcut }
-
-export function defineSnackConfig<TArgs extends unknown[]>(
-    callback: (...args: TArgs) => ISnackConfig
-) {
-    return (...args: TArgs) => {
+) => {
+    return (...args: TArgs): ISnackReturn & { [K in keyof TPresets & string]: SnackShortcut } => {
         const config = callback(...args)
         const presets = config.presets
         const maxStack = config.maxStack ?? DEFAULT_MAX_STACK
@@ -220,6 +216,8 @@ export function defineSnackConfig<TArgs extends unknown[]>(
                 show(slug, content, overrides)
         }
 
-        return Object.assign(core, shortcuts)
+        return Object.assign(core, shortcuts) as ISnackReturn & {
+            [K in keyof TPresets & string]: SnackShortcut
+        }
     }
 }

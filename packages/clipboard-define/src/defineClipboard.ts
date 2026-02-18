@@ -3,10 +3,10 @@ import type { IClipboardConfig, IClipboardReturn, ClipboardType } from './types'
 
 const DEFAULT_RESET_DELAY = 2000
 
-export function defineClipboard<TArgs extends unknown[]>(
+export const defineClipboard = <TArgs extends unknown[]>(
     callback: (...args: TArgs) => IClipboardConfig
-): (...args: TArgs) => IClipboardReturn {
-    return (...args: TArgs) => {
+) => {
+    return (...args: TArgs): IClipboardReturn => {
         const config = callback(...args)
         const resetDelay = config.resetDelay ?? DEFAULT_RESET_DELAY
 

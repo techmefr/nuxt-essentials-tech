@@ -7,10 +7,10 @@ const DEFAULT_FALLBACK: Partial<IThresholdStep> = {
     label: 'unknown',
 }
 
-export function defineThreshold<TArgs extends unknown[]>(
+export const defineThreshold = <TArgs extends unknown[]>(
     callback: (...args: TArgs) => IThresholdConfig
-): (...args: TArgs) => IThresholdReturn {
-    return (...args: TArgs) => {
+) => {
+    return (...args: TArgs): IThresholdReturn => {
         const config = callback(...args)
         const thresholds = config.thresholds
         const fallback = config.fallback ?? DEFAULT_FALLBACK

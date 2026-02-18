@@ -1,46 +1,32 @@
 import { ref, computed } from 'vue'
-import type { IProgressConfig, IProgressReturn } from './types'
-
-const DEFAULT_PRECISION = 0
+import type { IRatioConfig, IRatioReturn } from './types'
 
 function clamp(value: number, min: number, max: number): number {
     return Math.min(Math.max(value, min), max)
 }
 
-function round(value: number, precision: number): number {
-    const factor = Math.pow(10, precision)
-    return Math.round(value * factor) / factor
-}
-
-export const defineProgress = <TArgs extends unknown[]>(
-    callback: (...args: TArgs) => IProgressConfig
+export const defineRatio = <TArgs extends unknown[]>(
+    callback: (...args: TArgs) => IRatioConfig
 ) => {
-    return (...args: TArgs): IProgressReturn => {
+    return (...args: TArgs): IRatioReturn => {
         const config = callback(...args)
-        const precision = config.precision ?? DEFAULT_PRECISION
-        const unit = config.unit ?? 'percent'
 
-        const current = ref(0)
+        const current = ref(clamp(config.current ?? 0, 0, config.max))
         const max = ref(config.max)
 
         const percentage = computed(() => {
             if (max.value <= 0) return 0
-            return round((current.value / max.value) * 100, precision)
+            return Math.round((current.value / max.value) * 100)
         })
 
         const ratio = computed(() => {
             if (max.value <= 0) return 0
-            return round(current.value / max.value, precision + 2)
+            return Math.round((current.value / max.value) * 100) / 100
         })
 
-        const remaining = computed(() => round(max.value - current.value, precision))
+        const remaining = computed(() => max.value - current.value)
 
         const isComplete = computed(() => current.value >= max.value)
-
-        const formatted = computed(() => {
-            if (unit === 'percent') return `${percentage.value}%`
-            return `${current.value} / ${max.value}`
-        })
 
         const setCurrent = (value: number): void => {
             current.value = clamp(value, 0, max.value)
@@ -59,7 +45,6 @@ export const defineProgress = <TArgs extends unknown[]>(
             current,
             max,
             percentage,
-            formatted,
             ratio,
             remaining,
             isComplete,

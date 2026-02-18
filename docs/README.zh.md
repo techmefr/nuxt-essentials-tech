@@ -19,6 +19,8 @@
 | `@techmefr/progress-define` | 强类型进度追踪 Composable，支持响应式百分比、比率、剩余值和格式化输出 | [README](../packages/progress-define/docs/README.zh.md) |
 | `@techmefr/threshold-define` | 强类型阈值匹配 Composable，基于值范围提供响应式颜色、标签和样式 | [README](../packages/threshold-define/docs/README.zh.md) |
 | `@techmefr/clipboard-define` | 剪贴板 Composable，支持复制、tel: 和 mailto: 链接以及响应式反馈状态 | [README](../packages/clipboard-define/docs/README.zh.md) |
+| `@techmefr/ratio-define` | 强类型比率追踪 Composable，支持响应式百分比、比率、剩余值和完成状态 | [README](../packages/ratio-define/docs/README.zh.md) |
+| `@techmefr/color-define` | 强类型颜色级别 Composable，基于 slug 的范围、反转选项和响应式样式输出 | [README](../packages/color-define/docs/README.zh.md) |
 
 ## \u5F00\u53D1
 
