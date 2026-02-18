@@ -16,6 +16,8 @@ Progettato per standardizzare i pattern comuni tra i progetti: tabelle dati, for
 | `@techmefr/infinite-pagination` | Composable per paginazione infinita con auto-append, stato di caricamento e gestione errori | [README](../packages/infinite-pagination/docs/README.it.md) |
 | `@techmefr/datetime-define` | defineDate, defineDateTime, defineDateRange — picker tipizzati con supporto locale e fuso orario via date-fns | [README](../packages/datetime-define/docs/README.it.md) |
 | `@techmefr/notification-define` | Motore di notifiche basato su slug con preset, impilamento, priorità, deduplicazione e ciclo di vita delle promise | [README](../packages/notification-define/docs/README.it.md) |
+| `@techmefr/progress-define` | Composable tipizzato per il tracciamento del progresso con percentuale, rapporto, rimanente e output formattato reattivi | [README](../packages/progress-define/docs/README.it.md) |
+| `@techmefr/threshold-define` | Composable tipizzato per soglie con colore, etichetta e stile reattivi basati su intervalli di valori | [README](../packages/threshold-define/docs/README.it.md) |
 
 ## Sviluppo
 

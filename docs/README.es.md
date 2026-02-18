@@ -16,6 +16,8 @@ Dise\u00f1ado para estandarizar patrones comunes entre proyectos: tablas de dato
 | `@techmefr/infinite-pagination` | Composable para paginación infinita con auto-append, estado de carga y manejo de errores | [README](../packages/infinite-pagination/docs/README.es.md) |
 | `@techmefr/datetime-define` | defineDate, defineDateTime, defineDateRange — pickers tipados con soporte de locale y zona horaria via date-fns | [README](../packages/datetime-define/docs/README.es.md) |
 | `@techmefr/notification-define` | Motor de notificaciones por slug con presets, apilamiento, prioridad, deduplicación y ciclo de vida de promesas | [README](../packages/notification-define/docs/README.es.md) |
+| `@techmefr/progress-define` | Composable tipado de seguimiento de progreso con porcentaje, ratio, restante y salida formateada reactivos | [README](../packages/progress-define/docs/README.es.md) |
+| `@techmefr/threshold-define` | Composable tipado de umbrales con color, etiqueta y estilo reactivos basados en rangos de valores | [README](../packages/threshold-define/docs/README.es.md) |
 
 ## Desarrollo
 

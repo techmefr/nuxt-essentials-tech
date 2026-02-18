@@ -16,6 +16,8 @@ Designed to standardize common patterns across projects: data tables, forms, fil
 | `@techmefr/infinite-pagination` | Composable for infinite pagination with auto-append, loading state and error handling | [README](./packages/infinite-pagination/README.md) |
 | `@techmefr/datetime-define` | defineDate, defineDateTime, defineDateRange — typed pickers with date-fns locale and timezone support | [README](./packages/datetime-define/README.md) |
 | `@techmefr/notification-define` | Slug-based notification engine with presets, stacking, priority, deduplication and promise lifecycle | [README](./packages/notification-define/README.md) |
+| `@techmefr/progress-define` | Typed progress tracking composable with reactive percentage, ratio, remaining and formatted output | [README](./packages/progress-define/README.md) |
+| `@techmefr/threshold-define` | Typed threshold matching composable with reactive color, label and style based on value ranges | [README](./packages/threshold-define/README.md) |
 
 ## Development
 
